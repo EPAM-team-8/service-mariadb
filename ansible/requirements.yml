@@ -1,0 +1,5 @@
+---
+
+- src: 'https://github.com/EPAM-team-8/ansible-role-database.git'
+  name: service-two-db
+  version: 'v1.0.0'
