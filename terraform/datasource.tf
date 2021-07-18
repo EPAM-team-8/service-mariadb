@@ -20,6 +20,9 @@ data "aws_subnet" "private_subnet" {
     values = ["private"]
   }
 }
+data "aws_route53_zone" "mariadb-zone" {
+name         = "epam.one."
+}
 
 data "aws_security_group" "sg" {
     vpc_id =  data.aws_vpc.my-vpc.id

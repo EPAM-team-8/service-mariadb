@@ -1,5 +1,5 @@
 resource "aws_route53_record" "mariadb-record" {
-  zone_id = data.aws_route53_zone.rabbit-zone.zone_id
+  zone_id = data.aws_route53_zone.mariadb-zone.zone_id
   name = "mariadb.epam.one"
   type = "A"
   ttl  = "300"
